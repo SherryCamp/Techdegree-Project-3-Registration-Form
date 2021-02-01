@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+   background-color:rgb(255, 255, 255);
+   line-height: 1.8;
+    margin: 0;
+    
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(10, 43, 61);
+    color: white;
+    padding: 30px;
+    margin-top: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h2, header p {
+    text-align: center;
+    width: 60%; 
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: rgb(10, 43, 61);
+    width: 100%;
+
+}
+p {
+	border: none;
+    color:#aaa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#province {
+	height: 50px;
+    color:#aaa
+	
+}
+
+fieldset {
+    border:none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+div {
+    align-content: center;
+}
+
+.second_line {
+    border-top: 2px solid rgb(10, 43, 61);
+    width: 90%;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+label {
+    margin: 10px;
+    color:#aaa;
+}
+
+
+.input {
+    border: none;
+    padding: 15px;
+    width: 95%;
+    margin: 10px;
+    border-radius: 5px;
+   
+}
+
+#zip_code {
+    width: 34%;
+}
+
+input:focus {
+    background-color: rgb(240, 239, 239);
+   
+}
+
+.input:hover {
+    
+    background-color: rgb(227, 219, 219);
+}
+
+input[required] {
+    font-style: italic;
+    text-align: right;
+}
+
+.check {
+    margin: 20px;
+}
+
+.textarea, input {
+ background-color: rgba(225, 224, 220, 0.871);
+ border: none;
+
+}
+
+.textarea {
+    padding: 30px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.button {
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #40B5AD;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+	border: none;
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+}
+
+
+.top_line {
+    overflow: visible; /* For IE */
+    width: 92%;
+    border: none;
+	border-top: 5px solid;
+	border-bottom: 2px solid;
+	padding-bottom: 2px;
+    margin: 0 auto 15px auto;
+}
+
+
+/*      Media Queries          */  
+
+
+@media (min-width: 768px) {
+
+
+ .second_line {
+    width: 50%; 
+}
+
+.top_line {
+    width: 50%;
+}
+
+.button {
+    width:50%;
+}
+
+fieldset {
+    width: 50%;
+}
+
+.flex-form {
+    display: flex;
+    text-align: left;
+}
+
+.input {
+    flex-grow: 1;
+    flex-basis: 5px;
+    justify-content: end;
+    max-width: 70%;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    margin: auto auto auto 0
+}
+
+}
