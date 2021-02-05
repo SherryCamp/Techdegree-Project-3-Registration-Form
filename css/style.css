@@ -1,22 +1,31 @@
 *{
     box-sizing: border-box;
-    font-family: 'Merriweather', serif;
+font-family: 'Trykker', serif;
+font-family: 'Viga', sans-serif;
 }
 
 body {
-   background-color:rgb(255, 255, 255);
+   background-color:rgba(101, 45, 241, 0.235);
    line-height: 1.8;
-    margin: 0;
-    
+    margin: 0;  
+}
+h1, h2, legend {
+font-family: 'Trykker', serif;	
 }
 
 h1 {
+	
+	font-size: 1.8rem;
     text-align: center;
-    background-color: rgb(10, 43, 61);
+    background-color: rgba(10, 43, 61, 0.858);
     color: white;
     padding: 30px;
     margin-top: 0;
 }
+h2{
+	font-size:1.5rem;
+}
+
 
 header {
     display: flex;
@@ -24,23 +33,34 @@ header {
     flex-direction: column;
 }
 
-header h2, header p {
+ h2, p {
     text-align: center;
     width: 60%; 
     margin: auto;
     margin-bottom: 10px;
 }
 
-header h2 {
-    color: rgb(10, 43, 61);
+header, h2 {
+	color: rgb(61, 10, 26);
     width: 100%;
-
 }
-p {
+ p{
+	font-family: 'Viga', sans-serif;
+	font-size:1.05rem;
 	border: none;
-    color:#aaa;
+    color:rgba(61, 10, 26, 0.365);
+    padding-bottom: 20px;
+}
+fieldset p {
+	display:inline;
+	text-align: left;
+    color:rgba(61, 10, 26, 0.365)
+	
 }
 
+.flex-form{
+	align-items: flex-start;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -48,14 +68,16 @@ form {
     width: 100%;
 }
 #province {
+	font-family: 'Trykker', serif;
 	height: 50px;
-    color:#aaa
+    color:#aaa;
+		text-decoration: none;
 	
 }
 
 fieldset {
     border:none;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     width: 100%;
 }
@@ -69,18 +91,23 @@ div {
 }
 
 legend {
-    font-weight: bold;
-    font-size: 20px;
+	font-size: 1.2rem;
+	color: rgb(61, 10, 26);
+    font-weight:bolder;
     text-align: left;
+    margin-bottom:11px;
 }
 
 label {
+	font-family: 'Viga', sans-serif;
+	font-size: 1rem;
     margin: 10px;
-    color:#aaa;
+    color:rgba(61, 10, 26, 0.365);
 }
 
 
 .input {
+	
     border: none;
     padding: 15px;
     width: 95%;
@@ -90,7 +117,12 @@ label {
 }
 
 #zip_code {
-    width: 34%;
+	
+		
+	display: inline-block;
+    max-width: 34%;
+	
+	
 }
 
 input:focus {
@@ -98,9 +130,11 @@ input:focus {
    
 }
 
-.input:hover {
-    
-    background-color: rgb(227, 219, 219);
+ .input:hover { 
+    background-color: #00FFFF;
+}
+.textarea:hover {
+background-color: #00FFFF;
 }
 
 input[required] {
@@ -112,28 +146,24 @@ input[required] {
     margin: 20px;
 }
 
-.textarea, input {
- background-color: rgba(225, 224, 220, 0.871);
- border: none;
-
-}
-
 .textarea {
     padding: 30px;
     width: 100%;
     border-radius: 5px;
     margin-top: 30px;
+    border: none;
 }
 
 .button {
+	font-family: 'Trykker', serif;
     width: 80%;
     padding: 20px;
     border-radius: 5px;
     background-color: #40B5AD;
-    color: white;
-    font-size: 20px;
+    color: #FFFFFF;
+    font-size: 2rem;
     font-weight: bold;
-    cursor: pointer;
+    cursor:pointer;
 	border: none;
 }
 
@@ -151,6 +181,9 @@ footer {
 	border-bottom: 2px solid;
 	padding-bottom: 2px;
     margin: 0 auto 15px auto;
+}
+.c-foot {
+    font-size: 1rem;
 }
 
 
@@ -189,9 +222,14 @@ fieldset {
 }
 
 label {
+	
     display: inline-block;
-    text-align: left;
+   
     margin: auto auto auto 0
 }
-
+	#zip_code {
+	margin-right: 37.5%;
+	display: inline-block;
+    max-width: 34%;
+	}
 }

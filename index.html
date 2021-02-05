@@ -3,9 +3,11 @@
      <head>
         <title>Registration Form</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<!--        <link rel="stylesheet" href="css/normalize.css">-->
+		 
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Trykker&family=Viga&display=swap" rel="stylesheet">
+		 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         
@@ -52,7 +54,7 @@
                     <div class="flex-form">
                         <label for="province">Province</label>
                         <select id="province" class="input" name="province">
-                            <option>Choose Province</option>
+                            <option class="chap">Choose Province</option>
                             <option value="BC">British Columbia</option>
                             <option value="Ab">Alberta</option>
                             <option value="MB">Manitoba</option>
@@ -111,8 +113,10 @@
 
                     <div>
                         <label for="textarea">Other topics you'd like to hear about</label>
+						
                         <textarea id="textarea" name="textarea" class="textarea"></textarea>
                     </div>
+					
                 </fieldset>
 
                 <button class="button" type="submit">Sign Up</button>
@@ -120,7 +124,7 @@
         </main>
         
         <footer>
-            <p><i>Copyright</i> The Code Review</p>
+            <p class="c-foot"><i>Copyright</i> The Code Review</p>
         </footer>
     </body>
 </html>
