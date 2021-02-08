@@ -102,46 +102,17 @@ label {
 	font-family: 'Viga', sans-serif;
 	font-size: 1rem;
     margin: 10px;
-    color:rgba(61, 10, 26, 0.365);
-}
-
-
-.input {
-	
-    border: none;
-    padding: 15px;
-    width: 95%;
-    margin: 10px;
-    border-radius: 5px;
-   
-}
-
-#zip_code {
-	
-		
-	display: inline-block;
-    max-width: 34%;
-	
-	
-}
-
- input:focus {
-	color: white;
-    background-color: rgba(234,19,147,0.13);
     
 }
-textarea:focus{
-	color: white;
-    background-color: rgba(234,19,147,0.13);
-}
-	
 
- .input:hover { 
-    background-color: #00FFFF;
+
+
+
+#zip_code {		
+	display: inline-block;
+    max-width: 34%;
 }
-.textarea:hover {
-background-color: #00FFFF;
-}
+
 
 input[required] {
     font-style: italic;
@@ -172,12 +143,9 @@ input[required] {
     cursor:pointer;
 	border: none;
 }
-.button:hover{
-	background-color: #00FFFF;
-	color: orange;
-	border: 5px solid red;
-	
-}
+
+
+
 
 footer {
     text-align: center;
@@ -195,7 +163,7 @@ footer {
     margin: 0 auto 15px auto;
 }
 .c-foot {
-    font-size: 1rem;
+    font-size: 5rem;
 }
 
 
