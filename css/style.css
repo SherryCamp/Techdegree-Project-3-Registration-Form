@@ -125,23 +125,16 @@ label {
 	
 }
 
- input:focus {
-	color: white;
-    background-color: rgba(234,19,147,0.13);
-    
-}
-textarea:focus{
-	color: white;
-    background-color: rgba(234,19,147,0.13);
-}
+input:focus, textarea:focus {
+color:white;
+background-color: rgba(234,19,147,0.13);
+transition: all 1s;
 	
+}
 
- .input:hover { 
-    background-color: #00FFFF;
-}
-.textarea:hover {
-background-color: #00FFFF;
-}
+
+
+
 
 input[required] {
     font-style: italic;
